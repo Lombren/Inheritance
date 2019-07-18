@@ -67,6 +67,6 @@ void student::info()
 }
 ostream& operator<<(ostream& os, const student& obj)
 {
-	os << (Human)obj <<"\t";
+	os << (Human&)obj <<"\t";
 	return os << "Специальность: " << obj.get_specialty() << ", " << obj.get_year() << "-й курс, успеваемость " << obj.get_karma() << "!";
 }

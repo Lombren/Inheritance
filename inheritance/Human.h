@@ -22,7 +22,7 @@ public:
 	
 	~Human();
 	//Methods:
-	void info();
+	virtual void info()=0;
 };
 
 ostream& operator<<(ostream& os, const Human& obj);

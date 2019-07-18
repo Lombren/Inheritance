@@ -51,6 +51,6 @@ void Teacher::info()
 
 ostream & operator<<(ostream & os, const Teacher & obj)
 {
-	os << (Human)obj << " ";
+	os << (Human&)obj << " ";
 	return os<< "Специальность: " << obj.get_specialty() << ", "<< "опыт преподавания: " << obj.get_xp() << " лет, "<< "уровень злости: " << obj.get_evil() << "%";// TODO: insert return statement here
 }
