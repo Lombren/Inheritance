@@ -44,5 +44,5 @@ void Human::info()
 }
 ostream& operator<<(ostream& os, const Human& obj)
 {
-	return os << obj.get_name() << " " << obj.get_age() << " " << " лет";
+	return os << obj.get_name() << " " << obj.get_age() <<" лет.";
 }
